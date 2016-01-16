@@ -9,6 +9,7 @@ mongoose.model('updates',{occupied: Boolean, parking_spot: Number, created_at: D
 
 app.get('/', function(request, response){
   //dead endpoint
+  response.json({"status": 'online'});
 });
 
 app.get('/status/:parking_spot', function(request, response){
@@ -29,6 +30,6 @@ app.get('/update/:parking_spot/:occupied', function(request, response){
   response.json({"update": true}); 
 });
 
-app.listen(7272, function(){
-  console.log('listening on port 7272');
+app.listen(7171, function(){
+  console.log('listening on port 7171');
 });
