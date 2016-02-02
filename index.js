@@ -42,5 +42,5 @@ app.get('/update/:parking_spot/:occupied', function(request, response){
 });
 
 app.listen(config.express_port, function(){
-  console.log('listening on port 7171');
+  console.log('listening on port '+config.express_port);
 });

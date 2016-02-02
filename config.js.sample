@@ -1,0 +1,5 @@
+var config = {};
+config.slack_url = 'https://hooks.slack.com/services/GT980090/abcdefghijklmn';
+config.mongodb = 'mongodb://127.0.0.1:27017/dbname';
+config.express_port = '7070';
+module.exports = config;
